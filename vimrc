@@ -22,5 +22,8 @@ set nocompatible
 set bs=2
 set backspace=indent,eol,start
 
+" in cljs, fixes the . being treated as a normal char
+set iskeyword-=.
+
 let mapleader = "," 
 
