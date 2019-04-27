@@ -1,4 +1,7 @@
-colorscheme desert
+set t_Co=256
+
+"colorscheme desert
+colorscheme Atelier_SavannaDark
 
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
