@@ -10,11 +10,6 @@
 
 execute pathogen#infect() 
 
-source $HOME/.vim/custom/functions.vim
-source $HOME/.vim/custom/maps.vim
-source $HOME/.vim/custom/hacks.vim
-source $HOME/.vim/custom/plugin_helpers.vim
-source $HOME/.vim/custom/appearance.vim
 
 filetype plugin indent on
 syntax enable on
@@ -22,8 +17,10 @@ set nocompatible
 set bs=2
 set backspace=indent,eol,start
 
-" in cljs, fixes the . being treated as a normal char
-set iskeyword-=.
-
 let mapleader = "," 
 
+source $HOME/.vim/custom/functions.vim
+source $HOME/.vim/custom/maps.vim
+source $HOME/.vim/custom/hacks.vim
+source $HOME/.vim/custom/plugin_helpers.vim
+source $HOME/.vim/custom/appearance.vim

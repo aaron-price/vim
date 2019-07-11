@@ -18,3 +18,6 @@ set noswapfile
 
 " Recognize .jl as Julia, not Lisp
 autocmd BufRead,BufNewFile *.jl :set filetype=julia
+
+" in cljs, fixes the . being treated as a normal char
+set iskeyword-=.
