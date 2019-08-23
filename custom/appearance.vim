@@ -11,6 +11,9 @@ augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
+" beam cursor
+set guicursor=n-v-c:beam-Cursor
+
 set showcmd             " show command in bottom bar
 
 filetype indent on      " load filetype-specific indent files
@@ -27,10 +30,10 @@ set listchars=tab:>~
 set list
 
 " Make column 80 and 100 stand out
-highlight CautionColumn ctermbg=11 ctermfg=1
-highlight DangerColumn ctermbg=9 ctermfg=15
-call matchadd('CautionColumn', '\%80v', 100)
-call matchadd('DangerColumn', '\%100v', 100)
+"highlight CautionColumn ctermbg=11 ctermfg=1
+"highlight DangerColumn ctermbg=9 ctermfg=15
+"call matchadd('CautionColumn', '\%80v', 100)
+"call matchadd('DangerColumn', '\%100v', 100)
 
 " syntax highlighting for diff files
 augroup PatchDiffHighlight
