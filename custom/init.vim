@@ -7,6 +7,7 @@ set encoding=UTF-8 " Required for devicons
 set t_Co=256
 
 let mapleader = ","
+let maplocalleader = "\\"
 
 " Fold by default
 set foldmethod=syntax

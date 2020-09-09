@@ -23,7 +23,8 @@ Plug 'Vigemus/impromptu.nvim'
 Plug 'clojure-vim/jazz.nvim'
 
 Plug 'guns/vim-clojure-static'
-Plug 'tpope/vim-fireplace'
+Plug 'Olical/conjure', { 'tag': 'v4.1.0' }
+"Plug 'tpope/vim-fireplace'
 
 " Searching
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code completion

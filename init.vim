@@ -12,3 +12,4 @@ source $HOME/.config/nvim/plug_config/which_key.vim
 " My own stuff
 source $HOME/.config/nvim/custom/maps.vim
 source $HOME/.config/nvim/custom/appearance.vim
+

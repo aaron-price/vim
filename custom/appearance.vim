@@ -30,7 +30,7 @@ set list
 highlight CautionColumn ctermbg=11 ctermfg=1
 highlight DangerColumn ctermbg=9 ctermfg=15
 "call matchadd('CautionColumn', '\%80v', 100)
-call matchadd('DangerColumn', '\%100v', 100)
+"call matchadd('DangerColumn', '\%100v', 100)
 
 " syntax highlighting for diff files
 augroup PatchDiffHighlight
