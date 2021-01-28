@@ -18,7 +18,7 @@ Plug 'gasparch/vim-elixir-fold'
 " Clojure support
 Plug 'gberenfield/cljfold.vim'
 " run 'pip3 install --user pynvim' first
-Plug 'clojure-vim/acid.nvim', { 'do': 'UpdateRemotePlugins'} 
+"Plug 'clojure-vim/acid.nvim', { 'do': 'UpdateRemotePlugins'} 
 Plug 'Vigemus/impromptu.nvim'
 Plug 'clojure-vim/jazz.nvim'
 
