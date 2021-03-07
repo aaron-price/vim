@@ -34,7 +34,10 @@ command -nargs=0 -bar Update if &modified
    \|        confirm write
    \|    endif
    \|endif
-noremap <silent> <C-S>          :update<CR>
+"nnoremap <silent> <C-S>         <C-C>:update<CR>
+
+"" Conjure reload changed namespaces when saving.
+nmap     <silent> <C-S>         <C-C>:update<CR> \| <localleader>rr
 vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
 

@@ -28,22 +28,6 @@ endfunction
 
 nnoremap <leader>grep :call Grep()<CR>
 
-" Fix weird bug where backspace isn't registered            
-"function Backspace()
-"    if col('.') == 1
-"        if line('.') != 1
-"            return "\<ESC>ka\<Del>"
-"        else
-"            return ""
-"        endif
-"    else
-"        return "\<Left>\<Del>"
-"    endif
-"endfunction
-
-"inoremap <BS> <c-r>=Backspace()<CR>
-
-" dw becomes d2w if word preceeds a comma
 
 function HandleDW()
     if getline(".")[col(".")-1] == ','

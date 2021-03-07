@@ -4,31 +4,33 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'preservim/nerdtree' " File tree
-"Plug 'ryanoasis/vim-devicons' " filetype icons
-"Plug 'tiagofumo/vim-nerdtree-syntax-highlight' " filetype color
-
-Plug 'tpope/vim-sensible' " A bunch of pragmatic defaults
+"Plug 'tpope/vim-sensible' " A bunch of pragmatic defaults
 Plug 'flazz/vim-colorschemes' " Enable Color Schemes
-
-" Elixir support
+"
+"" Elixir support
 Plug 'elixir-editors/vim-elixir'
-Plug 'slashmili/alchemist.vim'
-Plug 'gasparch/vim-elixir-fold'
+"Plug 'slashmili/alchemist.vim'
+"Plug 'gasparch/vim-elixir-fold'
+"
+"" Clojure support
+"""""" Getting to evaluation
+Plug 'tpope/vim-dispatch' " Needed for async dispatch
+Plug 'radenling/vim-dispatch-neovim'
+Plug 'clojure-vim/vim-jack-in'
+Plug 'Olical/conjure', { 'tag': 'v4.13.0' }
+""""""
 
-" Clojure support
-Plug 'gberenfield/cljfold.vim'
-" run 'pip3 install --user pynvim' first
-"Plug 'clojure-vim/acid.nvim', { 'do': 'UpdateRemotePlugins'} 
-Plug 'Vigemus/impromptu.nvim'
-Plug 'clojure-vim/jazz.nvim'
-
-Plug 'guns/vim-clojure-static'
-Plug 'Olical/conjure', { 'tag': 'v4.1.0' }
-"Plug 'tpope/vim-fireplace'
-
-" Searching
+"Plug 'gberenfield/cljfold.vim'
+"Plug 'Vigemus/impromptu.nvim'
+"Plug 'clojure-vim/jazz.nvim'
+"
+"Plug 'guns/vim-clojure-static'
+"
+"" Searching
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code completion
-Plug 'liuchengxu/vim-which-key' " Vim keybinding hints
+Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
+
+"Plug 'liuchengxu/vim-which-key' " Vim keybinding hints
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Interactive Searching
 Plug 'junegunn/fzf.vim'
 

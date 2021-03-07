@@ -5,11 +5,19 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Close vim if only empty nerdtree window remains
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+function! ToggleNerdAndNumbers()
+    :NERDTreeToggle<CR>
+    set invnumber invrelativenumber
+endfunction
+
 " Navigate frames with hjkl
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+nnoremap <C-n> :call ToggleNerdAndNumbers()<CR>
+
+":NERDTreeToggle<CR>
 
 " Disable "Press ? for help"
 let NERDTreeMinimalUI=1

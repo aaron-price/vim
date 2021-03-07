@@ -10,4 +10,4 @@ let mapleader = ","
 let maplocalleader = "\\"
 
 " Fold by default
-set foldmethod=syntax
+"set foldmethod=syntax
